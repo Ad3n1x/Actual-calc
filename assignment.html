@@ -24,14 +24,7 @@
             align-items: center;
             gap: 10px;
             margin: 10px;
-        }
-
-        .input1,
-        .input2,
-        .input3 {
-            width: 300px;
-            height: 30px;
-            text-align: center;
+            flex-wrap: wrap;
         }
 
         .select1 {
@@ -71,6 +64,7 @@
             gap: 20px;
             border: 2px solid black;
             padding: 10px;
+            width: 90%;
         }
 
         .div5 {
@@ -83,18 +77,27 @@
             text-align: center;
         }
 
+        .input3 {
+            width: 30%;
+            height: 30px;
+            text-align: center;
+        }
+
         .input6 {
             width: 30%;
             height: 30px;
             text-align: center;
         }
-        .div6{
+
+        .div6 {
+            display: flex;
             width: 90%;
             padding: 20px;
             border: 2px solid black;
             align-items: center;
             justify-content: center;
             text-align: center;
+            flex-wrap: wrap;
         }
     </style>
     <div class="div3">
@@ -112,25 +115,26 @@
     </div>
 
 
+    <h2>
+        Simple Calculator
+    </h2>
     <div class="div6">
-        <h2>
-            Simple Calculator
-        </h2>
         <div class="div1">
-            <input type="number" id="num1input" class="input1">
+            <input type="number" id="num1input" class="input5">
             <select name="" id="operatorinput" class="select1">
-                <option value="+" >+</option>
-                <option value="-" >-</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
                 <option value="*">*</option>
                 <option value="/">/</option>
                 <option value="%">%</option>
             </select>
-            <input type="text" id="num2input" class="input2">
+            <input type="number" id="num2input" class="input3">
             <button onclick="displayResult()" id="calculateButton" class="button1">Submit</button>
             <input type="text" id="operatorsolution" class="input3">
             <button onclick="clearFields()" id="clearButton" class="button2">Clear</button>
         </div>
     </div>
+
     <script src="assignment.js"></script>
 </body>
 
