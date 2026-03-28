@@ -117,8 +117,8 @@ function displayResult() {
 
 
 function displayResult() {
-    let num1 = parseFloat(document.getElementById("num1input").value);
-    let num2 = parseFloat(document.getElementById("num2input").value);
+    let num1 = Number(document.getElementById("num1input").value);
+    let num2 = Number(document.getElementById("num2input").value);
     let operator = parseFloat(document.getElementById("operatorinput").value);
     let result = calculator(num1, operator, num2);
     document.getElementById("operatorsolution").value = result;
